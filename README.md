@@ -16,11 +16,6 @@ The AI-powered chatbot integrates with Jumpstart’s online platforms, including
 - **24/7 Customer Support**: Provides instant assistance at any time.  
 - **FAQ Handling**: Answers common questions about products, shipping, returns, and promotions.  
 - **Query Resolution**: Assists with order tracking, account management, and payment issues.  
-- **Multi-channel Integration**: Works on website, mobile app, and social media platforms.  
-- **Personalized Responses**: Tailors solutions to users while safeguarding customer data.  
-- **Analytics & Reporting**: Monitors interactions and provides actionable insights.  
-- **Continuous Learning**: Improves response accuracy and efficiency with machine learning.  
-- **Ethical AI Compliance**: Adheres to global AI governance standards and responsible AI practices.
 
 ## Installation & Setup
 1. Clone the repository:  
