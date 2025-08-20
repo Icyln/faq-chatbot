@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jumpstart | Modern Fashion & Style</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">Jumpstart</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="features.html">Features</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="#" id="openChatLink" class="btn btn-secondary">AI Chat Support</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Where Style Meets Innovation</h1>
+                <p class="subtitle">Discover curated fashion collections and get personalized recommendations from our AI-powered style assistant.</p>
+                <a href="shop.html" class="btn btn-primary">Explore Collections</a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI Style Assistant</h3>
+                        <p>Get instant fashion advice and product recommendations from our smart chatbot.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-gem"></i>
+                        <h3>Curated Collections</h3>
+                        <p>Explore hand-picked items that are on-trend and crafted with quality materials.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-truck-fast"></i>
+                        <h3>Fast, Free Shipping</h3>
+                        <p>Enjoy complimentary shipping on all orders over $50, delivered right to your door.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="featured" class="featured-products">
+            <div class="container">
+                <h2>Featured This Week</h2>
+                <div class="products">
+                    <div class="product-card">
+                        <img src="https://content.roman.co.uk/images/extralarge/be18edd1-ef02-4ddc-b8de-1ee99fd2c5b6.jpg" alt="Summer Denim Jacket">
+                        <h3>Summer Denim Jacket</h3>
+                        <p>A classic mid-wash denim jacket with a modern cut, perfect for layering in any season.</p>
+                        <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://www.azura-rose.com/cdn/shop/files/IMG_6845_2048x.jpg?v=1715624353" alt="Floral Maxi Dress">
+                        <h3>Floral Maxi Dress</h3>
+                        <p>Embrace summer elegance with this lightweight chiffon maxi dress featuring vibrant floral prints.</p>
+                         <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://www.themodestman.com/wp-content/uploads/2018/10/White-sneakers-smart-casual-1-683x1024.jpg" alt="Casual Canvas Sneakers">
+                        <h3>Casual Canvas Sneakers</h3>
+                        <p>Designed for everyday comfort, these unisex canvas sneakers offer a minimalist look with maximum style.</p>
+                         <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Jumpstart</h4>
+                    <p>Empowering every look with smart fashion and tech-driven experiences.</p>
+                     <div class="social-icons">
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p>Email: support@jumpstart.com</p>
+                    <p>Phone: +1 800 555 1234</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jumpstart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="chatToggle">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <div id="chatContainer">
+    <div class="chat-header">
+        <h3>AI Style Assistant</h3>
+        <button id="closeChatBtn">&times;</button>
+    </div>
+    <div id="chatbox"></div>
+    <form id="input-area" onsubmit="return false;">
+        <input
+            type="text"
+            id="userInput"
+            autocomplete="off"
+            placeholder="Ask for style advice..."
+        />
+        <button id="sendBtn" type="submit"><i class="fas fa-paper-plane"></i></button>
+    </form>
+</div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>

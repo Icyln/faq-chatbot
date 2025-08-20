@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Jumpstart - Modern Fashion & Style</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shop.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Jumpstart</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="features.html">Features</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn btn-secondary">AI Chat Support</a>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-hero">
+            <div class="container">
+                <h1>Curated Collections</h1>
+                <p>Discover our handpicked selection of premium fashion pieces</p>
+            </div>
+        </section>
+
+        <section class="shop-filters">
+            <div class="container">
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#" class="active">All</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Footwear</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Price Range</h3>
+                        <div class="price-slider">
+                            <input type="range" min="0" max="500" value="250" class="slider">
+                            <div class="price-display">$0 - $250</div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Sort By</h3>
+                        <select>
+                            <option>Newest First</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Top Rated</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-toggle">
+                    <i class="fas fa-filter"></i> Filters
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-badge">New</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1702683565229-e11a366da605?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Elegant Evening Dress">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Elegant Evening Dress</h3>
+                            <p>Perfect for special occasions with its flowing silhouette and delicate details.</p>
+                            <div class="product-price">$129.99</div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-badge sale">Sale</div>
+                        <div class="product-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1673757121126-cbf64f316bab?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Designer Sunglasses">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Designer Sunglasses</h3>
+                            <p>Premium UV protection with a timeless design that complements any outfit.</p>
+                            <div class="product-price">
+                                <span class="original-price">$89.99</span>
+                                <span class="sale-price">$59.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1575403538007-acb790100421?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Luxury Leather Handbag">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Luxury Leather Handbag</h3>
+                            <p>Crafted from genuine leather with ample storage and elegant hardware.</p>
+                            <div class="product-price">$189.99</div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-badge">Limited</div>
+                        <div class="product-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1730765844925-f29aca570590?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Premium Wool Coat">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium Wool Coat</h3>
+                            <p>Stay warm in style with this luxurious wool blend coat with modern tailoring.</p>
+                            <div class="product-price">$249.99</div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1751437797070-54ac95740dac?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Designer Watch">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Designer Watch</h3>
+                            <p>Precision timepiece with minimalist design and premium materials.</p>
+                            <div class="product-price">$349.99</div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-badge sale">Sale</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Casual Sneakers">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium Casual Sneakers</h3>
+                            <p>Comfort meets style in these versatile sneakers perfect for everyday wear.</p>
+                            <div class="product-price">
+                                <span class="original-price">$119.99</span>
+                                <span class="sale-price">$79.99</span>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1738774106981-cc24d010cdb7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Silk Scarf">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Luxury Silk Scarf</h3>
+                            <p>Add a touch of elegance with this hand-printed silk scarf in vibrant colors.</p>
+                            <div class="product-price">$69.99</div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-badge">New</div>
+                        <div class="product-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1727943448464-295b73870d3a?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Designer Jeans">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium Designer Jeans</h3>
+                            <p>Perfect fit with premium denim and subtle detailing for a sophisticated look.</p>
+                            <div class="product-price">$149.99</div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1750043976691-f8cdc58190c7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cashmere Sweater">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Luxury Cashmere Sweater</h3>
+                            <p>Unmatched softness and warmth in this timeless cashmere sweater.</p>
+                            <div class="product-price">$199.99</div>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">Next <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for exclusive offers and style tips</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Jumpstart</h4>
+                    <p>Empowering every look with smart fashion and tech-driven experiences.</p>
+                     <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p>Email: support@jumpstart.com</p>
+                    <p>Phone: +1 800 555 1234</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jumpstart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="chatToggle">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+    <div id="chatContainer">
+        <div class="chat-header">
+            <h3>AI Style Assistant</h3>
+            <button id="closeChatBtn">&times;</button>
+        </div>
+        <div id="chatbox"></div>
+        <form id="input-area" onsubmit="return false;">
+            <input
+                type="text"
+                id="userInput"
+                autocomplete="off"
+                placeholder="Ask for style advice..."
+            />
+            <button id="sendBtn" type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+    <script src="chatbot.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>
